@@ -1,0 +1,203 @@
+
+<ion-header>
+
+  <ion-navbar color="primary">
+    <ion-title>Settings</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+  <h4>Change the Channels</h4>
+  <br><br>
+  
+  
+
+  <p>step1</p><hr>
+  <ion-row>
+    <ion-col></ion-col>
+    <ion-col><button ion-button color="danger" small block (click)="setings(9)"><ion-icon name="settings"></ion-icon></button></ion-col>
+    <ion-col></ion-col>
+  </ion-row>
+  <ion-row>
+    <ion-col></ion-col>
+    <ion-col><button ion-button color="secondary" small block (click)="up()"><ion-icon name="arrow-dropup"></ion-icon></button></ion-col>
+    <ion-col></ion-col>
+  </ion-row>
+  <ion-row>
+    <ion-col><button ion-button color="secondary" small block (click)="left()"><ion-icon name="arrow-dropleft"></ion-icon></button></ion-col>
+    <ion-col><button ion-button color="secondary" small block (click)="ok()"></button></ion-col>
+    <ion-col><button ion-button color="secondary" small block (click)="right()"><ion-icon name="arrow-dropright"></ion-icon></button></ion-col>
+  </ion-row>
+  <ion-row>
+    <ion-col></ion-col>
+    <ion-col><button ion-button color="secondary" small block (click)="mdSwitch(9)"><ion-icon name="arrow-dropdown"></ion-icon></button></ion-col>
+    <ion-col></ion-col>
+  </ion-row>
+  <p>step2</p><hr>
+  <ion-row>
+      <ion-col col-4></ion-col>
+      <ion-col col-4></ion-col>
+      <ion-col>
+        <ion-row>Program
+          <button ion-button color="secondary" small block (click)="progup()"><ion-icon name="arrow-dropup"></ion-icon></button></ion-row>
+        <ion-row><button ion-button color="secondary" small block (click)="progdown()"><ion-icon name="arrow-dropdown"></ion-icon></button></ion-row>
+      </ion-col>
+    </ion-row>
+  <ion-item>
+      <ion-label>Channel-0</ion-label>
+      <ion-select [(ngModel)]="c0" multiple="false">
+        <ion-option>swarnavahini</ion-option>
+        <ion-option>sirasa</ion-option>
+        <ion-option>shakthi</ion-option>
+        <ion-option>itn</ion-option>
+        <ion-option>eye</ion-option>
+        <ion-option>vasantham</ion-option>
+        <ion-option>hiru</ion-option>
+        <ion-option>derana</ion-option>
+        <ion-option>tnl</ion-option>
+        <ion-option>siyatha</ion-option>
+      </ion-select>
+    </ion-item>
+  <ion-item>
+      <ion-label>Channel-1</ion-label>
+      <ion-select [(ngModel)]="c1" multiple="false">
+          <ion-option>swarnavahini</ion-option>
+        <ion-option>sirasa</ion-option>
+        <ion-option>shakthi</ion-option>
+        <ion-option>itn</ion-option>
+        <ion-option>eye</ion-option>
+        <ion-option>vasantham</ion-option>
+        <ion-option>hiru</ion-option>
+        <ion-option>derana</ion-option>
+        <ion-option>tnl</ion-option>
+        <ion-option>siyatha</ion-option>
+      </ion-select>
+    </ion-item>
+    <ion-item>
+        <ion-label>Channel-2</ion-label>
+        <ion-select [(ngModel)]="c2" multiple="false">
+            <ion-option>swarnavahini</ion-option>
+          <ion-option>sirasa</ion-option>
+          <ion-option>shakthi</ion-option>
+          <ion-option>itn</ion-option>
+          <ion-option>eye</ion-option>
+          <ion-option>vasantham</ion-option>
+          <ion-option>hiru</ion-option>
+          <ion-option>derana</ion-option>
+          <ion-option>tnl</ion-option>
+          <ion-option>siyatha</ion-option>
+        </ion-select>
+      </ion-item>
+      <ion-item>
+          <ion-label>Channel-3</ion-label>
+          <ion-select [(ngModel)]="c3" multiple="false">
+              <ion-option>swarnavahini</ion-option>
+            <ion-option>sirasa</ion-option>
+            <ion-option>shakthi</ion-option>
+            <ion-option>itn</ion-option>
+            <ion-option>eye</ion-option>
+            <ion-option>vasantham</ion-option>
+            <ion-option>hiru</ion-option>
+            <ion-option>derana</ion-option>
+            <ion-option>tnl</ion-option>
+            <ion-option>siyatha</ion-option>
+          </ion-select>
+        </ion-item>
+        <ion-item>
+            <ion-label>Channel-4</ion-label>
+            <ion-select [(ngModel)]="c4" multiple="false">
+                <ion-option>swarnavahini</ion-option>
+              <ion-option>sirasa</ion-option>
+              <ion-option>shakthi</ion-option>
+              <ion-option>itn</ion-option>
+              <ion-option>eye</ion-option>
+              <ion-option>vasantham</ion-option>
+              <ion-option>hiru</ion-option>
+              <ion-option>derana</ion-option>
+              <ion-option>tnl</ion-option>
+              <ion-option>siyatha</ion-option>
+            </ion-select>
+          </ion-item>
+      <ion-item>
+          <ion-label>Channel-5</ion-label>
+          <ion-select [(ngModel)]="c5" multiple="false">
+              <ion-option>swarnavahini</ion-option>
+            <ion-option>sirasa</ion-option>
+            <ion-option>shakthi</ion-option>
+            <ion-option>itn</ion-option>
+            <ion-option>eye</ion-option>
+            <ion-option>vasantham</ion-option>
+            <ion-option>hiru</ion-option>
+            <ion-option>derana</ion-option>
+            <ion-option>tnl</ion-option>
+            <ion-option>siyatha</ion-option>
+          </ion-select>
+        </ion-item>
+        <ion-item>
+            <ion-label>Channel-6</ion-label>
+            <ion-select [(ngModel)]="c6" multiple="false">
+                <ion-option>swarnavahini</ion-option>
+              <ion-option>sirasa</ion-option>
+              <ion-option>shakthi</ion-option>
+              <ion-option>itn</ion-option>
+              <ion-option>eye</ion-option>
+              <ion-option>vasantham</ion-option>
+              <ion-option>hiru</ion-option>
+              <ion-option>derana</ion-option>
+              <ion-option>tnl</ion-option>
+              <ion-option>siyatha</ion-option>
+            </ion-select>
+          </ion-item>
+          <ion-item>
+              <ion-label>Channel-7</ion-label>
+              <ion-select [(ngModel)]="c7" multiple="false">
+                  <ion-option>swarnavahini</ion-option>
+                <ion-option>sirasa</ion-option>
+                <ion-option>shakthi</ion-option>
+                <ion-option>itn</ion-option>
+                <ion-option>eye</ion-option>
+                <ion-option>vasantham</ion-option>
+                <ion-option>hiru</ion-option>
+                <ion-option>derana</ion-option>
+                <ion-option>tnl</ion-option>
+                <ion-option>siyatha</ion-option>
+              </ion-select>
+            </ion-item>
+          <ion-item>
+              <ion-label>Channel-8</ion-label>
+              <ion-select [(ngModel)]="c8" multiple="false">
+                  <ion-option>swarnavahini</ion-option>
+                <ion-option>sirasa</ion-option>
+                <ion-option>shakthi</ion-option>
+                <ion-option>itn</ion-option>
+                <ion-option>eye</ion-option>
+                <ion-option>vasantham</ion-option>
+                <ion-option>hiru</ion-option>
+                <ion-option>derana</ion-option>
+                <ion-option>tnl</ion-option>
+                <ion-option>siyatha</ion-option>
+              </ion-select>
+            </ion-item>
+            <ion-item>
+                <ion-label>Channel-9</ion-label>
+                <ion-select [(ngModel)]="c9" multiple="false">
+                    <ion-option>swarnavahini</ion-option>
+                  <ion-option>sirasa</ion-option>
+                  <ion-option>shakthi</ion-option>
+                  <ion-option>itn</ion-option>
+                  <ion-option>eye</ion-option>
+                  <ion-option>vasantham</ion-option>
+                  <ion-option>hiru</ion-option>
+                  <ion-option>derana</ion-option>
+                  <ion-option>tnl</ion-option>
+                  <ion-option>siyatha</ion-option>
+                </ion-select>
+              </ion-item>
+              <br>
+              <p>step3</p><hr>
+        <button ion-button  block outline (click)="chSubmit()">
+            Submit Changes
+          </button>
+</ion-content>

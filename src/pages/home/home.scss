@@ -1,0 +1,20 @@
+page-home {
+
+    ion-title{
+        text-align: center;
+    }
+
+     h4{
+        text-align: center;
+        margin-top: 20px;
+        margin-bottom: 10px;
+    }
+
+    .bg-img{
+        background-image: url("../../assets/imgs/pic.jpg");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+    }
+    
+}
